@@ -24,7 +24,30 @@ import kotlin.text.*
  */
 
 fun staircase(n: Int): Unit {
-    // Write your code here
+
+    for (i in 1..n) {
+        repeat(n-i){
+            print(" ")
+        }
+        for (j in 1..i) {
+            print("#")
+        }
+        println()
+
+
+        //ikinci for a gerek kalmadan 2 tane repeat ilede cozebiliriz. yada hic repeat kullanmadan iki for ile cozebiliriz.
+//        repeat(i){
+//            print("$")
+//        }
+
+    }
+
+    //3. yol
+    for (i in 1..n) {
+        println( " ".repeat(n-i) + "$".repeat(i))
+    }
+
+
 
 }
 
